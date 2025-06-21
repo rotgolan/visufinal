@@ -13,51 +13,65 @@
             background-color: #e0f7fa;
             color: #333;
             text-align: center;
+            direction: rtl;
         }
         header {
             background: linear-gradient(to right, #56ccf2, #2f80ed);
             color: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
         }
         header h1 {
             font-size: 3em;
             margin-bottom: 0.2em;
         }
         section {
-            padding: 40px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 15px;
-            max-width: 900px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 45px 30px;
+            margin: 25px auto;
+            background-color: #ffffff;
+            border-radius: 18px;
+            max-width: 1000px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
         }
         section h2 {
             color: #2f80ed;
-            margin-bottom: 20px;
-            font-size: 2em;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+        }
+        section h3 {
+            color: #56ccf2;
+            font-size: 1.6em;
+            margin-top: 30px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         li {
-            margin: 10px 0;
+            margin: 12px 0;
         }
         footer {
             background-color: #2f80ed;
             color: white;
-            padding: 15px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            margin-top: 30px;
+            padding: 18px 10px;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            margin-top: 40px;
         }
         .icon {
             color: #56ccf2;
-            margin-right: 10px;
+            margin-right: 8px;
         }
         .dashboard {
-            margin: 40px auto;
-            max-width: 900px;
+            margin: 45px auto;
+            max-width: 1000px;
+        }
+        .conclusion-list {
+            margin-top: 15px;
+            text-align: right;
+            direction: rtl;
+        }
+        .conclusion-list li::before {
+            content: "🧊 ";
         }
     </style>
     <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
@@ -69,12 +83,29 @@
     <p>✨ עיצוב, ייצור והפצת פסלי קרח בצורת חיות לגני ילדים ✨</p>
 </header>
 
-<section id="about">
-    <h2><i class="fas fa-info-circle icon"></i>אודות החברה</h2>
-    <p>חברת "פסלי קרח קסומים" הוקמה על ידי גולן רוטנברג, המתמחה בעיצוב ויצירה של פסלי קרח ייחודיים בצורת חיות המיועדים לפעילויות חינוכיות וכיפיות בגני ילדים. משרדי החברה ממוקמים בנרניה, ומטרתה העיקרית היא להעשיר את חווית הילדים, לעודד יצירתיות, ולהעניק לגננות כלי מרתק לפעילויות ייחודיות.</p>
-    <p>אנו מקפידים על דיוק ואיכות, החל מניהול הזמנות מדויק ועד לאספקה מושלמת לכל לקוח ולקוח.</p>
+<!-- Welcome Section -->
+<section id="welcome">
+    <h2><i class="fas fa-snowflake icon"></i>ברוכים הבאים לעולם הקסום של "פסלי קרח קסומים"! 🧊✨</h2>
+    <p>
+        אנחנו ב"פסלי קרח קסומים" הופכים חלומות קפואים למציאות נוצצת! חשבו על זה: ילדים בגן, עיניים פעורות, ופתאום – פסל קרח אריה שואג או פינגווין חמוד שמחכה להתמוסס לאיטו (בלי דרמות מיותרות, מבטיחים!).
+        אנחנו לא רק יוצרים קרח – אנחנו יוצרים <strong>רגעים קסומים</strong>, זיכרונות צוננים וחוויה לימודית שהיא... ובכן, נמסה – אבל הזיכרון נשאר! מי אמר שקרח זה רק לקוביות במשקה? אצלנו הוא כוכב ההצגה, ולא דורש אפילו ניקיון בסוף – הוא פשוט נעלם.
+    </p>
 </section>
 
+<!-- About / System Section -->
+<section id="about">
+    <h2><i class="fas fa-info-circle icon"></i>מי אנחנו, בעצם?</h2>
+    <p>
+        חברת "פסלי קרח קסומים" נוסדה בידי גולן רוטנברג ומשרדיה שוכנים בליבה הקפוא של <strong>נרניה</strong>. מטרתנו: להביא את הקוטב הצפוני ישירות אל גני הילדים בישראל, עם נצנצים, צבעים והמון כיף.
+    </p>
+    <h3>המערכת הסודית שלנו: מאחורי הקלעים הקפואים! 📊</h3>
+    <p>
+        מאחורי הקלעים פועלת מערכת מידע חכמה מבוססת Tableau – ה"מוח" ששומר על הקרחונים שלנו מסודרים. היא עוקבת אחר כל הזמנה, מנתחת העדפות ילדים ומוודאת שהאריה שלכם לא יהפוך לשלולית בדרך.
+        <br>כך אנו הופכים נתונים "קפואים" לתובנות "חמות" שמובילות להחלטות עסקיות מדויקות.
+    </p>
+</section>
+
+<!-- Products Section -->
 <section id="products">
     <h2><i class="fas fa-ice-cream icon"></i>סוגי המוצרים שלנו</h2>
     <ul>
@@ -90,10 +121,21 @@
     </ul>
 </section>
 
+<!-- Dashboards Section -->
 <section id="dashboards">
-    <h2><i class="fas fa-chart-bar icon"></i>דשבורדים וניתוח נתונים</h2>
+    <h2><i class="fas fa-chart-bar icon"></i>הדשבורדים שלנו: הצצה לעולם הנתונים המבריק!</h2>
+
+    <!-- Dashboard 1 -->
+    <h3>1. הדשבורד האסטרטגי: כשהמנכ"ל מסתכל על הקרחון מלמעלה (ועל הרווחיות) 📈</h3>
+    <p>
+        <strong>מה הוא מציג?</strong> תמונה רחבה של ביצועי החברה לאורך זמן – רווחיות לפי סוגי חיות, פילוח אזורים גאוגרפיים ופלחי לקוחות.
+        <br><strong>מה אנחנו לומדים?</strong> אילו פסלים לצנן או להפשיר, והיכן כדאי לפתוח מרכזי הפצה חדשים.
+    </p>
+    <ul class="conclusion-list">
+        <li>אם פסלי פינגווין מציגים ירידה עקבית ברווחיות, נבדוק תמחור ותהליך ייצור מחדש.</li>
+        <li>ריכוז גבוה של הזמנות עירוניות בירושלים אך רווחיות נמוכה → לבחון תמחור דיפרנציאלי או מוצרים בעלי נפח גבוה באזור זה.</li>
+    </ul>
     <div class="dashboard">
-        <!-- Dashboard 1 Embed -->
         <div class='tableauPlaceholder' id='viz1750500213579' style='position: relative'>
             <object class='tableauViz' style='width:100%;height:600px;'>
                 <param name='host_url' value='https://public.tableau.com/' />
@@ -102,8 +144,18 @@
             </object>
         </div>
     </div>
+
+    <!-- Dashboard 2 -->
+    <h3>2. הדשבורד הניהולי: המנהלים מבינים את הפרטים הקטנים (והגדולים!) 📉</h3>
+    <p>
+        <strong>מה הוא מציג?</strong> מגמת מכירות חודשית, העדפות ערוצי הזמנה, וקשר בין זמן אספקה לשביעות רצון – במיוחד בפסלים גדולים.
+        <br><strong>מה אנחנו לומדים?</strong> היכן להשקיע בקמפיינים דיגיטליים וכיצד ללטש את שרשרת האספקה.
+    </p>
+    <ul class="conclusion-list">
+        <li>בערוץ הטלפוני ניתנות הנחות גבוהות אך סכום הזמנה נמוך → יש לחזק מיומנויות מכירה או לשנות מדיניות הנחות.</li>
+        <li>קשר שלילי חזק בין זמן אספקה לשביעות רצון בפסלים גדולים → לתעדף משלוח אקספרס או פיצוי להמתנה.</li>
+    </ul>
     <div class="dashboard">
-        <!-- Dashboard 2 Embed -->
         <div class='tableauPlaceholder' id='viz1750500279122' style='position: relative'>
             <object class='tableauViz' style='width:100%;height:600px;'>
                 <param name='host_url' value='https://public.tableau.com/' />
@@ -112,8 +164,18 @@
             </object>
         </div>
     </div>
+
+    <!-- Dashboard 3 -->
+    <h3>3. הדשבורד התפעולי: כשמנהלי הייצור והלוגיסטיקה "מזיעים" (רק לא הקרח!) 📦⏱️</h3>
+    <p>
+        <strong>מה הוא מציג?</strong> סטטוס הזמנות בזמן אמת, עומסי ייצור לאורך היום, רווחיות לפי סוג פסל וסוג אריזה.
+        <br><strong>מה אנחנו לומדים?</strong> מתי לתגבר כוח אדם ומתי להקפיא (!) עלויות אריזה גבוהות.
+    </p>
+    <ul class="conclusion-list">
+        <li>צוואר בקבוק קבוע בשעות 8:00‑10:00 → לתגבר משמרת הבוקר או לארגן מחדש תהליכי הכנה.</li>
+        <li>פסלי אריה עם אריזה מבודדת רווחיים פחות → לחפש ספקי אריזה חלופיים או לעדכן מחיר מכירה.</li>
+    </ul>
     <div class="dashboard">
-        <!-- Dashboard 3 Embed -->
         <div class='tableauPlaceholder' id='viz1750500318791' style='position: relative'>
             <object class='tableauViz' style='width:100%;height:600px;'>
                 <param name='host_url' value='https://public.tableau.com/' />
@@ -125,7 +187,7 @@
 </section>
 
 <footer>
-    &copy; 2024 פסלי קרח קסומים. כל הזכויות שמורות.
+    &copy; 2025 פסלי קרח קסומים. כל הזכויות שמורות.
 </footer>
 
 </body>
