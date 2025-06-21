@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang=\"he\">
+<html lang="he">
 <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>פסלי קרח קסומים</title>
-    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -55,7 +55,12 @@
             color: #56ccf2;
             margin-right: 10px;
         }
+        .dashboard {
+            margin: 40px auto;
+            max-width: 900px;
+        }
     </style>
+    <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 </head>
 <body>
 
@@ -64,14 +69,14 @@
     <p>✨ עיצוב, ייצור והפצת פסלי קרח בצורת חיות לגני ילדים ✨</p>
 </header>
 
-<section id=\"about\">
-    <h2><i class=\"fas fa-info-circle icon\"></i>אודות החברה</h2>
-    <p>חברת \"פסלי קרח קסומים\" הוקמה על ידי גולן רוטנברג, המתמחה בעיצוב ויצירה של פסלי קרח ייחודיים בצורת חיות המיועדים לפעילויות חינוכיות וכיפיות בגני ילדים. משרדי החברה ממוקמים בנרניה, ומטרתה העיקרית היא להעשיר את חווית הילדים, לעודד יצירתיות, ולהעניק לגננות כלי מרתק לפעילויות ייחודיות.</p>
+<section id="about">
+    <h2><i class="fas fa-info-circle icon"></i>אודות החברה</h2>
+    <p>חברת "פסלי קרח קסומים" הוקמה על ידי גולן רוטנברג, המתמחה בעיצוב ויצירה של פסלי קרח ייחודיים בצורת חיות המיועדים לפעילויות חינוכיות וכיפיות בגני ילדים. משרדי החברה ממוקמים בנרניה, ומטרתה העיקרית היא להעשיר את חווית הילדים, לעודד יצירתיות, ולהעניק לגננות כלי מרתק לפעילויות ייחודיות.</p>
     <p>אנו מקפידים על דיוק ואיכות, החל מניהול הזמנות מדויק ועד לאספקה מושלמת לכל לקוח ולקוח.</p>
 </section>
 
-<section id=\"products\">
-    <h2><i class=\"fas fa-ice-cream icon\"></i>סוגי המוצרים שלנו</h2>
+<section id="products">
+    <h2><i class="fas fa-ice-cream icon"></i>סוגי המוצרים שלנו</h2>
     <ul>
         <li><strong>🐾 סוגי חיות:</strong> אריה, פיל, דולפין, פינגווין, דב, סוס, ג'ירפה, קוף.</li>
         <li><strong>📏 גדלים:</strong>
@@ -85,19 +90,38 @@
     </ul>
 </section>
 
-<section id=\"gallery\">
-    <h2><i class=\"fas fa-camera icon\"></i>גלריית תמונות</h2>
-    <p>📸 בקרוב תעלה גלריית תמונות מרהיבה של הפסלים שלנו! 📸</p>
-</section>
-
-<section id=\"contact\">
-    <h2><i class=\"fas fa-phone icon\"></i>צור קשר</h2>
-    <p>📞 לפרטים נוספים והזמנות:</p>
-    <ul>
-        <li><i class=\"fas fa-phone-alt icon\"></i>טלפון: 050-1234567</li>
-        <li><i class=\"fas fa-envelope icon\"></i>אימייל: info@icesculptures.co.il</li>
-        <li><i class=\"fas fa-map-marker-alt icon\"></i>כתובת: דרך הארון 1, נרניה</li>
-    </ul>
+<section id="dashboards">
+    <h2><i class="fas fa-chart-bar icon"></i>דשבורדים וניתוח נתונים</h2>
+    <div class="dashboard">
+        <!-- Dashboard 1 Embed -->
+        <div class='tableauPlaceholder' id='viz1750500213579' style='position: relative'>
+            <object class='tableauViz' style='width:100%;height:600px;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='IceAnimalDash1/Dashboard1' />
+            </object>
+        </div>
+    </div>
+    <div class="dashboard">
+        <!-- Dashboard 2 Embed -->
+        <div class='tableauPlaceholder' id='viz1750500279122' style='position: relative'>
+            <object class='tableauViz' style='width:100%;height:600px;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='IceAnimalDash2/Dashboard2' />
+            </object>
+        </div>
+    </div>
+    <div class="dashboard">
+        <!-- Dashboard 3 Embed -->
+        <div class='tableauPlaceholder' id='viz1750500318791' style='position: relative'>
+            <object class='tableauViz' style='width:100%;height:600px;'>
+                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='embed_code_version' value='3' />
+                <param name='name' value='IceAnimalDash3/Dashboard3' />
+            </object>
+        </div>
+    </div>
 </section>
 
 <footer>
